@@ -1,4 +1,5 @@
 import stylex from "@stylexjs/stylex";
+import Component from "./component";
 
 const s = stylex.create({
   main: {
@@ -8,12 +9,19 @@ const s = stylex.create({
     gap: 10,
     paddingTop: 20,
   },
+  button: {
+    backgroundColor: "black",
+  },
 });
 
 export default function Home() {
   return (
     <main className={stylex(s.main)}>
-      <h1>Hello</h1>
+      <Component content="Component A" />
+      <Component content="Component B" variant="yellowGreen" isLarge={true} />
+      <Component content="Component C" variant="blue" />
+      <Component content="Component D" styles={s.button} />
+      <Component content="Component E" variant="yellowGreen" opacity={0.2} />
     </main>
   );
 }
