@@ -15,8 +15,8 @@ const style = stylex.create({
   primary: {
     color: "pink",
   },
-  yellowGreen: {
-    color: "yellowgreen",
+  greenYellow: {
+    color: "greenyellow",
   },
   blue: {
     color: "blue",

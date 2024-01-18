@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <main className={stylex(s.main)}>
       <Component content="Component A" />
-      <Component content="Component B" variant="yellowGreen" isLarge={true} />
+      <Component content="Component B" variant="greenYellow" isLarge={true} />
       <Component content="Component C" variant="blue" />
       <Component content="Component D" styles={s.button} />
-      <Component content="Component E" variant="yellowGreen" opacity={0.2} />
+      <Component content="Component E" variant="greenYellow" opacity={0.2} />
     </main>
   );
 }
