@@ -1,7 +1,7 @@
 import stylex from "@stylexjs/stylex";
 
 type ComponentProps = {
-  content: string;
+  children: any;
   variant?: string;
   isLarge?: boolean;
   styles?: any;
@@ -31,7 +31,7 @@ const style = stylex.create({
 });
 
 export default function Component({
-  content,
+  children,
   variant = "primary",
   isLarge = false,
   opacity = 1,
@@ -47,7 +47,7 @@ export default function Component({
         styles,
       )}
     >
-      {content}
+      {children}
     </h1>
   );
 }

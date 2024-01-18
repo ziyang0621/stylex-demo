@@ -17,11 +17,15 @@ const s = stylex.create({
 export default function Home() {
   return (
     <main className={stylex(s.main)}>
-      <Component content="Component A" />
-      <Component content="Component B" variant="greenYellow" isLarge={true} />
-      <Component content="Component C" variant="blue" />
-      <Component content="Component D" styles={s.button} />
-      <Component content="Component E" variant="greenYellow" opacity={0.2} />
+      <Component>Component A</Component>
+      <Component variant="greenYellow" isLarge={true}>
+        Component B
+      </Component>
+      <Component variant="blue">Component C</Component>
+      <Component styles={s.button}>Component D</Component>
+      <Component variant="greenYellow" opacity={0.2}>
+        Component E
+      </Component>
     </main>
   );
 }
